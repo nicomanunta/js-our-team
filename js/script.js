@@ -32,6 +32,16 @@ let dipendenti = [
     }
 ]
 console.log(dipendenti)
+// MILESTONE 1 stampare in console
+for(let i = 0; i<dipendenti.length; i++){
+    
+    for (let key in dipendenti[i]){
+        
+        console.log(dipendenti[i].nome)
+        console.log(dipendenti[i].ruolo)
+        console.log(dipendenti[i].nome)
+    }
+}
 
 
 
