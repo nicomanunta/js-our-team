@@ -3,7 +3,7 @@ let dipendenti = [
     {
         nome: "Wayne Bamett",
         ruolo: "Founder & CEO",
-        foto: "wayne-bamett-founder-ceo.jpg angela-caroll-chief-editor.jpg"
+        foto: "wayne-bamett-founder-ceo.jpg"
     },
     {
         nome: "Angela Caroll",
@@ -43,12 +43,15 @@ for(let i = 0; i<dipendenti.length; i++){
     }
 }
 // MILESTONE 2 STAMPERE NEL DOM
-document.getElementById("dipendente1").innerHTML = dipendenti[0].nome +" "+ dipendenti[0].ruolo +" "+ dipendenti[0].foto 
-document.getElementById("dipendente2").innerHTML = dipendenti[1].nome +" "+ dipendenti[1].ruolo +" "+ dipendenti[1].foto 
-document.getElementById("dipendente3").innerHTML = dipendenti[2].nome +" "+ dipendenti[2].ruolo +" "+ dipendenti[2].foto 
-document.getElementById("dipendente4").innerHTML = dipendenti[3].nome +" "+ dipendenti[3].ruolo +" "+ dipendenti[3].foto 
-document.getElementById("dipendente5").innerHTML = dipendenti[4].nome +" "+ dipendenti[4].ruolo +" "+ dipendenti[4].foto 
-document.getElementById("dipendente6").innerHTML = dipendenti[5].nome +" "+ dipendenti[5].ruolo +" "+ dipendenti[5].foto 
+dipendenti[0].foto.search = "wayne-bamett-founder-ceo.jpg"
+document.getElementById("dipendente1").innerHTML = dipendenti[0].nome +" "+ dipendenti[0].ruolo +" "+ `<img src="./img/wayne-barnett-founder-ceo.jpg" alt="">`
+document.getElementById("dipendente2").innerHTML = dipendenti[1].nome +" "+ dipendenti[1].ruolo +" "+ `<img src="./img/angela-caroll-chief-editor.jpg" alt="">` 
+document.getElementById("dipendente3").innerHTML = dipendenti[2].nome +" "+ dipendenti[2].ruolo +" "+ `<img src="./img/walter-gordon-office-manager.jpg" alt="">` 
+document.getElementById("dipendente4").innerHTML = dipendenti[3].nome +" "+ dipendenti[3].ruolo +" "+ `<img src="./img/angela-lopez-social-media-manager.jpg" alt="">` 
+document.getElementById("dipendente5").innerHTML = dipendenti[4].nome +" "+ dipendenti[4].ruolo +" "+ `<img src="./img/scott-estrada-developer.jpg" alt="">`
+document.getElementById("dipendente6").innerHTML = dipendenti[5].nome +" "+ dipendenti[5].ruolo +" "+ `<img src="./img/barbara-ramos-graphic-designer.jpg" alt="">`
+
+
 
 
 
