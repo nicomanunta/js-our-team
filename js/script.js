@@ -39,17 +39,32 @@ for(let i = 0; i<dipendenti.length; i++){
     console.log(dipendenti[i].ruolo)
     console.log(dipendenti[i].foto)
 }
-let dipendente = document.getElementById("dipendente")
+
+
+let dipendente_card = document.getElementById("dipendente-card")
 // MILESTONE 2 STAMPERE NEL DOM
  for(let i = 0; i<dipendenti.length; i++){
+
     let div = document.createElement("div")
-    div.innerHTML = dipendenti[i].nome +" "+ dipendenti[i].ruolo +" "+ dipendenti[i].foto +" "+ `<img class="dimensioni-img" src="./img/${dipendenti[i].foto}" alt="">`
-    dipendente.appendChild(div)
+    div.classList.add("card", "mx-2")
+
+    div.innerHTML = `<img src="./img/${dipendenti[i].foto}" class="card-img-top dimensioni-img" alt=""> `
+
+    let dati = document.createElement("div")
+    dati.classList.add("card-body")
+
+    let nome = `<h5 class="card-title">${dipendenti[i].nome}</h5>`
+    let ruolo = `<p class="card-text">${dipendenti[i].ruolo} </p> `
     
-    
+    dati.innerHTML = nome + ruolo
+ 
+    div.appendChild(dati)
+    dipendente_card.appendChild(div)
+
+   
+
+
  }
-
-
 
 
 
